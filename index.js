@@ -4,7 +4,7 @@ const { dbConnection } = require('./database/config');
 require('dotenv').config();
 
 const auth =  require('./routes/auth');
-const auth =  require('./routes/events');
+const events =  require('./routes/events');
 
 // variables y procesos
 // console.log(process.env) 
@@ -26,7 +26,7 @@ app.use(express.json());
 
 // Rutas
 app.use('/api/auth', auth);
-app.use('/api/events', auth);
+app.use('/api/events', events);
 
 // TODO: CRUD: Eventos
 

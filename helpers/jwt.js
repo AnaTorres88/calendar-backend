@@ -1,5 +1,5 @@
 // Crea el JWT
-const jwt = require('jsonwebtoke');
+const jwt = require('jsonwebtoken');
 
 // JWT trabaja con callbacks, necesitamos promises
 
