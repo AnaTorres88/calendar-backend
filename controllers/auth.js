@@ -5,7 +5,7 @@ const User = require('../models/User');
 const { generateJWT } = require('../helpers/jwt');
 
 const createUser = async(req, res = response) => {
-    const { name, email, password } = req.body;
+    const { email, password } = req.body;
     // solo se puede dar una respuesta 1 unica vez
     try {
         let user = await User.findOne({email});
